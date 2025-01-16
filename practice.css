@@ -1,0 +1,156 @@
+/* Reset some default styles for the page */
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .search-bar {
+    margin-right: 20px;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  ul.main-nav {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  ul.main-nav li {
+    margin-left: 20px;
+  }
+  
+  ul.main-nav li:last-child {
+    margin-right: 0;
+  }
+  
+  ul.main-nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .registration:hover .sub-nav {
+    display: block;
+  }
+  
+  ul.sub-nav {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: #71b85b;
+    padding: 10px;
+    border-radius: 3px;
+  }
+  
+  ul.sub-nav li {
+    margin-bottom: 5px;
+  }
+  
+  ul.sub-nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .search-bar {
+        display: none;
+    }
+    
+    ul.main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    ul.main-nav li {
+        margin: 5px 0;
+    }
+  
+    .registration:hover .sub-nav {
+        display: block;
+        position: relative;
+    }
+  }
+/* Style the card container */
+.container{
+  display: flex;
+  flex-wrap: wrap;
+    
+}
+.card {
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the image inside the card */
+.card img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50px;
+}
+
+/* Style the message text */
+.message {
+    text-align: center;
+    background-color: rgb(12, 165, 192);
+    height: 25px;
+    border-radius: 50px;
+    padding-top: 4px;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+/* Style the "Click Here" button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

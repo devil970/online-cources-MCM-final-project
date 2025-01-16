@@ -1,0 +1,271 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the header and navigation bar */
+header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.search-bar {
+  margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+ul.main-nav {
+  list-style-type: none;
+  display: flex;
+}
+
+ul.main-nav li {
+  margin-left: 20px;
+}
+
+ul.main-nav li:last-child {
+  margin-right: 0;
+}
+
+ul.main-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.registration:hover .sub-nav {
+  display: block;
+}
+
+ul.sub-nav {
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  background-color: #71b85b;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+ul.sub-nav li {
+  margin-bottom: 5px;
+}
+
+ul.sub-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .search-bar {
+      display: none;
+  }
+  
+  ul.main-nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  ul.main-nav li {
+      margin: 5px 0;
+  }
+
+  .registration:hover .sub-nav {
+      display: block;
+      position: relative;
+  }
+}
+ .background{
+  height: 100vh;
+  width: 100%;
+  background:linear-gradient(45deg,#d2001a,#7662ff);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+ }
+ @keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+.about-us {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  size: 50;
+}
+
+.about-us:hover {
+  color: rgb(0, 231, 19);
+}
+
+.profile-image{
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #070707;
+ 
+}
+.card {
+  background-color: #2f9749;
+  border-radius: 50px;
+   margin: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+  color: white;
+}
+
+.footer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 15px;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-wrap: wrap;
+}
+.social-media a {
+  color: white;
+  margin: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+}
+.social-media a ion-icon {
+  color: white;
+  background-color: black;
+}
+.social-media a:hover ion-icon {
+  color: rgb(221, 2, 210);
+  transform: translateY(5px);
+}
+.footer2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+.footer0 {
+  font-weight: 1200;
+  transition-duration: 1s;
+}
+.footer0:hover {
+  color: rgb(243, 168, 7);
+}
+.footer2 .heading {
+  font-weight: 900;
+  font-size: 18px;
+}
+.footer3 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer2 .heading:hover {
+  color: rgb(243, 168, 7);
+}
+.footer2 .div:hover {
+  transform: scale(1.05);
+}
+.footer3 h4 {
+  margin: 0 10px;
+}
+.footer2 div {
+  margin: 10px;
+}
