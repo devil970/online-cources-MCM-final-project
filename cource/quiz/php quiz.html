@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="img/php.png">
+    <title>PHP Quiz</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>PHP Beginner Quiz</h1>
+        <h5>2 marks each question</h5>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1.  What is the correct syntax for declaring a variable in PHP?</p>
+                <input type="radio" name="q1" value="a"> a) $my_variable<br>
+                <input type="radio" name="q1" value="b"> b) var $my_variable</div>
+                <input type="radio" name="q1" value="c"> c) var_dump($my_variable)<br>
+
+                <p>2. What is the correct syntax for printing a value to the console in PHP?</p>
+                <input type="radio" name="q2" value="a"> a) echo $my_variable<br>
+                <input type="radio" name="q2" value="b"> b) print $my_variable<br>
+                <input type="radio" name="q2" value="c"> c) console.log($my_variable)<br>
+    
+                <p>3. What is the difference between echo and print in PHP?</p>
+                <input type="radio" name="q3" value="a"> a) $my_array = []<br>
+                <input type="radio" name="q3" value="b"> b) $my_array = new Array()<br>
+                <input type="radio" name="q3" value="c"> c) $my_array = array(1, 2, 3, 4, 5)<br>
+
+                <p>4. What is the correct syntax for creating an array in PHP?</p>
+                <input type="radio" name="q4" value="a"> a) img<br>
+                <input type="radio" name="q4" value="b"> b) image<br>
+                <input type="radio" name="q4" value="c"> c) picture<br>
+
+                <p>5. What is the correct syntax for accessing the value of an element in an array in PHP?</p>
+                <input type="radio" name="q5" value="a"> a) $my_array[0]<br>
+                <input type="radio" name="q5" value="b"> b) $my_array['0']<br>
+                <input type="radio" name="q5" value="c"> c) $my_array->get(0)<br>
+
+                <p>6. What is the correct syntax for defining a function in PHP?</p>
+                <input type="radio" name="q6" value="a"> a) def my_function(): ...<br>
+                <input type="radio" name="q6" value="b"> b) function my_function() { ... }<br>
+                <input type="radio" name="q6" value="c"> c) public function my_function() { ... }<br>
+
+                <p>7. What is the difference between a function and a method in PHP?</p>
+                <input type="radio" name="q7" value="a"> a) A function is more efficient than a method.<br>
+                <input type="radio" name="q7" value="b"> b) A method is faster than a function. <br>
+                <input type="radio" name="q7" value="c"> c) A function is a global piece of code that can be called from anywhere in the program, while a method is a function that belongs to a class and can only be called on objects of that class.<br>
+
+                <p>8. What is the correct syntax for creating an object from a class in PHP?</p>
+                <input type="radio" name="q8" value="a"> a) $my_object = new My_Class()<br>
+                <input type="radio" name="q8" value="b"> b) $my_object = My_Class()<br>
+                <input type="radio" name="q8" value="c"> c) $my_object = My_Class::new()<br>
+
+                <p>9. What is the correct syntax for accessing a property of an object in PHP?</p>
+                <input type="radio" name="q9" value="a"> a) $my_object->my_property<br>
+                <input type="radio" name="q9" value="b"> b) $my_object['my_property']<br>
+                <input type="radio" name="q9" value="c"> c) $my_object->get('my_property')<br>
+
+                <p>10. What is the difference between a property and a method in PHP?</p>
+                <input type="radio" name="q10" value="a"> a) A property is a variable that belongs to a class, while a method is a function that belongs to a class.
+                (b) There is no difference between a property and a method in PHP.<br>
+                <input type="radio" name="q10" value="b"> b) A property is faster than a method.<br>
+                <input type="radio" name="q10" value="c"> c) A method is more efficient than a property.<br>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+
+            <!-- Add similar sections for the remaining questions -->
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="results" class="hidden">
+        <h2>Results</h2>
+        <p id="score">Your Score: <span>0</span></p>
+    </div>
+    <script src="php quiz.js"></script>
+</body>
+</html>

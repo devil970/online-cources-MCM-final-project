@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="img/MySQL.jpg">
+    <title>SQL Quiz</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>SQL Beginner Quiz</h1>
+        <h5>2 marks each question</h5>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. What is the full form of SQL?</p>
+                <input type="radio" name="q1" value="a"> a) Structured Query Language<br>
+                <input type="radio" name="q1" value="b"> b) Simple Query Language<br>
+                <input type="radio" name="q1" value="c"> c) Standard Query Language<br>
+
+                <p>2.  Which of the following is a DDL command?</p>
+                <input type="radio" name="q2" value="a"> a) INSERT<br>
+                <input type="radio" name="q2" value="b"> b) CREATE TABLE<br>
+                <input type="radio" name="q2" value="c"> c) UPDATE<br>
+    
+                <p>3. Which of the following is a DML command?</p>
+                <input type="radio" name="q3" value="a"> a) SELECT<br>
+                <input type="radio" name="q3" value="b"> b) INSERT<br>
+                <input type="radio" name="q3" value="c"> c) Both<br>
+
+                <p>4. Which of the following is a TCL command?</p>
+                <input type="radio" name="q4" value="a"> a) COMMIT<br>
+                <input type="radio" name="q4" value="b"> b) SAVEPOINT<br>
+                <input type="radio" name="q4" value="c"> c) Both<br>
+
+                <p>5.  Which of the following is a valid SQL data type?</p>
+                <input type="radio" name="q5" value="a"> a) INT<br>
+                <input type="radio" name="q5" value="b"> b) VARCHAR(255)<br>
+                <input type="radio" name="q5" value="c"> c) Both<br>
+
+                <p>6. Which of the following is a valid SQL operator?</p>
+                <input type="radio" name="q6" value="a"> a) <<br>
+                <input type="radio" name="q6" value="b"> b) ><br>
+                <input type="radio" name="q6" value="c"> c) Both<br>
+
+                <p>7. Which of the following is a valid SQL clause?</p>
+                <input type="radio" name="q7" value="a"> a) WHERE<br>
+                <input type="radio" name="q7" value="b"> b) ORDERD BY<br>
+                <input type="radio" name="q7" value="c"> c) GROUP BY<br>
+
+                <p>8. Which of the following is a valid SQL clause?</p>
+                <input type="radio" name="q8" value="a"> a) WHERE<br>
+                <input type="radio" name="q8" value="b"> b) Makes the text italic<br>
+                <input type="radio" name="q8" value="c"> c) Makes the text underlined<br>
+
+                <p>9. Which of the following is a valid SQL function?</p>
+                <input type="radio" name="q9" value="a"> a) AVG()<br>
+                <input type="radio" name="q9" value="b"> b) COUNT()<br>
+                <input type="radio" name="q9" value="c"> c) Both<br>
+
+                <p>10. Which of the following is a valid SQL subquery?</p>
+                <input type="radio" name="q10" value="a"> a)  SELECT * FROM (SELECT * FROM customers) AS cust<br>
+                <input type="radio" name="q10" value="b"> b)  SELECT * FROM customers WHERE id IN (SELECT id FROM orders)<br>
+                <input type="radio" name="q10" value="c"> c) Both<br>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+
+            <!-- Add similar sections for the remaining questions -->
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="results" class="hidden">
+        <h2>Results</h2>
+        <p id="score">Your Score: <span>0</span></p>
+    </div>
+    <script src="sql quiz.js"></script>
+</body>
+</html>
