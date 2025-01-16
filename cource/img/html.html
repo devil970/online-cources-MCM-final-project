@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML Quiz</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>HTML Beginner Quiz</h1>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. What does HTML stand for?</p>
+                <input type="radio" name="q1" value="a"> a) Hyper Text Markup Language<br>
+                <input type="radio" name="q1" value="b"> b) Hyperlink and Text Markup Language<br>
+                <input type="radio" name="q1" value="c"> c) Home Tool Markup Language<br>
+
+                <p>1. What does HTML stand for?</p>
+                <input type="radio" name="q2" value="a"> a) Hyper Text Markup Language<br>
+                <input type="radio" name="q2" value="b"> b) Hyperlink and Text Markup Language<br>
+                <input type="radio" name="q2" value="c"> c) Home Tool Markup Language<br>
+            </div>
+
+            <!-- Add similar sections for the remaining questions -->
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="results" class="hidden">
+        <h2>Results</h2>
+        <p id="score">Your Score: <span>0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
